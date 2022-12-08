@@ -102,7 +102,7 @@ class _RegisterPageState extends State<RegisterPage> {
       "password": password
     };
 
-    const url = 'https://mrson-routting-fastapi.onrender.com/auth/create/user';
+    const url = 'http://14.225.36.120/auth/create/user';
     final uri = Uri.parse(url);
     final response = await http.post(uri, body: jsonEncode(body), headers: {
       'Content-Type': 'application/json',

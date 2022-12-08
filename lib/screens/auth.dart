@@ -81,7 +81,7 @@ class _AuthPageState extends State<AuthPage> {
     //Get the data from form
 
     // const url = 'https://mrson-routting-fastapi.onrender.com/auth/token';
-    const url = 'http://14.225.44.29/auth/token';
+    const url = 'http://14.225.36.120/auth/token';
     final uri = Uri.parse(url);
     final response = await http.post(uri, body: map);
     print(response.statusCode);
